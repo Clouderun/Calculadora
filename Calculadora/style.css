@@ -1,0 +1,74 @@
+@font-face {
+    font-family: Pancakes;
+    src: url(/fonte/Pancake.ttf) format('truetype');
+}
+
+*{
+    font-family: Pancakes;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: azure;
+}
+
+#calculadora{
+    background-color: hsl(187, 68%, 55%);
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+    border-style: double;
+}
+
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: hsl(187, 68%, 60%);
+    color: rgb(247, 191, 191);
+
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /*ao fazer isso dividimos em colunas de 4 e 1fr garante que seja igualmente dividido */
+    gap: 10px;
+    padding: 25px;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: powderblue;
+    color: rgb(60, 71, 96);
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: hsl(187, 52%, 90%);
+}
+
+button:active{
+    background-color: hsl(187, 52%, 100%);
+}
+
+.operador {
+    background-color: hsl(353, 43%, 72%);
+}
+.operador:hover{
+    background-color: hsl(353, 43%, 78%);
+}
+.operador:active{
+    background-color: hsl(353, 43%, 84%);
+
+}
